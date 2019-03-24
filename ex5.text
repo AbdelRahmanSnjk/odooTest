@@ -1,0 +1,11 @@
+I have search online for what is pseudo-code SQL and i have found an example of this, if you want an SQL code, i would
+gladly proivce
+
+Create a product table that has a name, price, creation date and one to many categories. 
+Create a table categories where it has a name and a bit represeting if it is public or not.	
+
+SELECT *
+FROM Products
+WHERE Products.flag = 1
+GROUP BY Products.category
+HAVING COUNT(Products.category) > 5 ;
