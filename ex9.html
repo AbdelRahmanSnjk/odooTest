@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="functionResults"></p>
+
+<script>
+function myFunction() {
+var alphabet = [];
+var i = 'A'.charCodeAt();
+var end = 'Z'.charCodeAt();
+for (; i < end ; i++) { 
+
+ alphabet.push((String.fromCharCode(i)));
+}
+
+
+  return alphabet;
+}
+document.getElementById("functionResults").innerHTML = myFunction();
+</script>
+
+</body>
+</html>
+
